@@ -8,18 +8,14 @@
 <link rel="icon" href="img/lunar-courier-icon.png">
 <style>
   :root {
-    color-scheme: light dark;
-    --bg: #f6f7fb; --card: #ffffff; --fg: #141826; --muted: #5b6378;
-    --line: rgba(20,24,38,.10); --accent: #2f6bff; --live: #12805c; --soon: #a15c00;
-    --shadow: 0 1px 2px rgba(20,24,38,.06), 0 8px 24px rgba(20,24,38,.06);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #0b0d14; --card: #151925; --fg: #e8ebf5; --muted: #9aa3bb;
-      --line: rgba(232,235,245,.10); --accent: #7aa2ff; --live: #4fd1a1; --soon: #f0b35a;
-      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3); }
+    color-scheme: dark;
+    --bg: #05080f; --card: #0e1320; --fg: #e6e9f2; --muted: #9aa3b8;
+    --line: rgba(220,230,255,.10); --accent: #7fc8ff; --live: #4fd1a1; --soon: #f0b35a;
+    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 12px 32px rgba(0,0,0,.35);
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
+  body { margin: 0; color: var(--fg);
+    background: radial-gradient(1100px 520px at 70% -12%, #16213f 0%, rgba(5,8,15,0) 70%) no-repeat, var(--bg);
     font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif; }
   main { max-width: 1080px; margin: 0 auto; padding: 56px 16px 40px; }
   header h1 { font: 700 clamp(32px, 6vw, 48px)/1.1 -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
@@ -32,7 +28,7 @@
     box-shadow: var(--shadow); display: flex; flex-direction: column; }
   img { max-width: 100%; height: auto; }
   .shot { aspect-ratio: 16 / 9; width: 100%; height: auto; object-fit: cover; display: block; background: #0b0d14; }
-  .shot.sky { display: grid; place-items: center; background: linear-gradient(180deg, #7fb6ff 0%, #cfe3ff 70%, #eaf2ff 100%); }
+  .shot.sky { display: grid; place-items: center; background: linear-gradient(180deg, #0c1a3a 0%, #24447a 65%, #e39a5c 100%); }
   .shot.sky img { width: 34%; border-radius: 22%; box-shadow: 0 10px 30px rgba(10,40,90,.3); }
   .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
   .title { display: flex; gap: 14px; align-items: center; }
@@ -44,9 +40,8 @@
   .status.live { color: var(--live); }
   .status.soon { color: var(--soon); }
   .actions { margin-top: auto; padding-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-  .buy { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; background: #111;
+  .buy { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #000; background: #fff;
     padding: 9px 16px; border-radius: 10px; font-weight: 600; font-size: 15px; }
-  @media (prefers-color-scheme: dark) { .buy { background: #fff; color: #111; } }
   .buy .price { opacity: .7; font-weight: 500; }
   .more { color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500; }
   .more:hover, .buy:hover { text-decoration: underline; }
