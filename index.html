@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LD Clinton · Games and Apps</title>
+<meta name="description" content="Games and apps for iPhone, iPad, Mac and Apple TV by LD Clinton: Lunar Courier, Deep Signal, Boostback and Downwind.">
+<link rel="icon" href="img/lunar-courier-icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f7fb; --card: #ffffff; --fg: #141826; --muted: #5b6378;
+    --line: rgba(20,24,38,.10); --accent: #2f6bff; --live: #12805c; --soon: #a15c00;
+    --shadow: 0 1px 2px rgba(20,24,38,.06), 0 8px 24px rgba(20,24,38,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0d14; --card: #151925; --fg: #e8ebf5; --muted: #9aa3bb;
+      --line: rgba(232,235,245,.10); --accent: #7aa2ff; --live: #4fd1a1; --soon: #f0b35a;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3); }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 56px 16px 40px; }
+  header h1 { font: 700 clamp(32px, 6vw, 48px)/1.1 -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+    letter-spacing: -.02em; margin: 0; }
+  header p { color: var(--muted); font-size: 19px; max-width: 620px; margin: 12px 0 0; }
+  h2 { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); margin: 48px 0 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+    box-shadow: var(--shadow); display: flex; flex-direction: column; }
+  img { max-width: 100%; height: auto; }
+  .shot { aspect-ratio: 16 / 9; width: 100%; height: auto; object-fit: cover; display: block; background: #0b0d14; }
+  .shot.sky { display: grid; place-items: center; background: linear-gradient(180deg, #7fb6ff 0%, #cfe3ff 70%, #eaf2ff 100%); }
+  .shot.sky img { width: 34%; border-radius: 22%; box-shadow: 0 10px 30px rgba(10,40,90,.3); }
+  .body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .title { display: flex; gap: 14px; align-items: center; }
+  .title img { width: 56px; height: 56px; border-radius: 13px; flex: none; border: 1px solid var(--line); }
+  .title h3 { margin: 0; font-size: 20px; line-height: 1.2; }
+  .title .platforms { color: var(--muted); font-size: 14px; margin-top: 2px; }
+  .card p { margin: 0; }
+  .status { font-size: 13px; font-weight: 600; }
+  .status.live { color: var(--live); }
+  .status.soon { color: var(--soon); }
+  .actions { margin-top: auto; padding-top: 6px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .buy { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #fff; background: #111;
+    padding: 9px 16px; border-radius: 10px; font-weight: 600; font-size: 15px; }
+  @media (prefers-color-scheme: dark) { .buy { background: #fff; color: #111; } }
+  .buy .price { opacity: .7; font-weight: 500; }
+  .more { color: var(--accent); text-decoration: none; font-size: 15px; font-weight: 500; }
+  .more:hover, .buy:hover { text-decoration: underline; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted);
+    font-size: 15px; display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>LD Clinton</h1>
+    <p>Games and apps for iPhone, iPad, Mac and Apple TV. No ads, no tracking, no subscriptions.</p>
+  </header>
+
+  <h2>On the App Store</h2>
+  <div class="grid">
+    <article class="card">
+      <img class="shot" src="img/lunar-courier.jpg" alt="Lunar Courier: a jetpack courier on the Moon as a solar flare warning flashes" width="1200" height="750">
+      <div class="body">
+        <div class="title">
+          <img src="img/lunar-courier-icon.png" alt="" width="56" height="56">
+          <div><h3>Lunar Courier</h3><div class="platforms">iPhone · iPad · Mac · Apple TV</div></div>
+        </div>
+        <div class="status live">Available now · $2.99, buy once and play on all your devices</div>
+        <p>The Moon's colonies run on deliveries, and you're the courier. Strap on a jetpack and thread each parcel through the right dome's ring, dodging drones, maglev trains and solar flares.</p>
+        <div class="actions">
+          <a class="buy" href="https://apps.apple.com/app/id6829441241">App Store <span class="price">$2.99</span></a>
+          <a class="more" href="https://lazlaru.github.io/lunar-courier/">More about the game →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="shot" src="img/deep-signal.jpg" alt="Deep Signal: a submersible's lights on a reef at the sea floor" width="1200" height="750">
+      <div class="body">
+        <div class="title">
+          <img src="img/deep-signal-icon.png" alt="" width="56" height="56">
+          <div><h3>Deep Signal: Salvage Dive</h3><div class="platforms">Mac</div></div>
+        </div>
+        <div class="status live">Available now · $6.99</div>
+        <p>Something on the sea floor has been calling every forty seconds for eleven years. Fly a submersible down to four very different wrecks and find out what it wants.</p>
+        <div class="actions">
+          <a class="buy" href="https://apps.apple.com/app/deep-signal-salvage-dive/id6830315750">App Store <span class="price">$6.99</span></a>
+          <a class="more" href="https://lazlaru.github.io/deep-signal-site/">More about the game →</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <h2>Coming soon</h2>
+  <div class="grid">
+    <article class="card">
+      <img class="shot" src="img/boostback.jpg" alt="Boostback: a rocket booster landing on a barge at sea" width="1200" height="675">
+      <div class="body">
+        <div class="title">
+          <img src="img/boostback-icon.png" alt="" width="56" height="56">
+          <div><h3>Boostback</h3><div class="platforms">iPhone · iPad · Mac · Apple TV</div></div>
+        </div>
+        <div class="status soon">In testing</div>
+        <p>Run a rocket company from an old fish cannery. Land boosters on a barge called Probably Fine, dock with a space station, and race the biggest launch company in the world to the Moon, then to Mars.</p>
+        <div class="actions">
+          <a class="more" href="https://lazlaru.github.io/boostback-site/">More about the game →</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="shot sky"><img src="img/downwind-icon.png" alt="" width="256" height="256"></div>
+      <div class="body">
+        <div class="title">
+          <img src="img/downwind-icon.png" alt="" width="56" height="56">
+          <div><h3>Downwind: Airport Traffic</h3><div class="platforms">iPhone · iPad · Mac</div></div>
+        </div>
+        <div class="status soon">In testing · Free</div>
+        <p>For pilots and plane spotters. See the live traffic around your airport, look back over the day's arrivals and departures, and replay a flight afterwards.</p>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <span>© 2026 LD Clinton</span>
+    <a href="https://apps.apple.com/us/developer/lance-douglas-clinton/id6829441243">All apps on the App Store</a>
+  </footer>
+</main>
+</body>
+</html>
