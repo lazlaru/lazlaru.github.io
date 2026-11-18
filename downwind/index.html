@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Downwind Support</title>
+<meta name="description" content="Help and support for Downwind: Airport Traffic, a free app for pilots and plane spotters on iPhone, iPad and Mac.">
+<link rel="icon" href="../img/downwind-icon.png">
+<style>
+  :root { color-scheme: dark; --bg: #05080f; --card: #0e1320; --fg: #e6e9f2; --muted: #9aa3b8;
+    --line: rgba(220,230,255,.10); --accent: #7fc8ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--fg);
+    background: radial-gradient(1100px 520px at 70% -12%, #16213f 0%, rgba(5,8,15,0) 70%) no-repeat, var(--bg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 40px; }
+  header { display: flex; gap: 18px; align-items: center; }
+  header img { width: 84px; height: 84px; border-radius: 19px; border: 1px solid var(--line); flex: none; }
+  h1 { font-size: clamp(28px, 5vw, 38px); line-height: 1.15; margin: 0; letter-spacing: -.01em; }
+  header p { margin: 4px 0 0; color: var(--muted); }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  a { color: var(--accent); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin-top: 20px; }
+  dt { font-weight: 600; margin-top: 16px; }
+  dd { margin: 4px 0 0; color: #c9cfdd; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px;
+    display: flex; gap: 8px 24px; flex-wrap: wrap; justify-content: space-between; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../img/downwind-icon.png" alt="" width="84" height="84">
+    <div>
+      <h1>Downwind: Airport Traffic</h1>
+      <p>Free for iPhone, iPad and Mac · by LD Clinton</p>
+    </div>
+  </header>
+
+  <p>Downwind is for pilots and plane spotters. It shows the live traffic around an airport and the runway in use, decodes the weather, replays the last hour, and debriefs your own flights: takeoffs, landings, pattern altitude and approach stability.</p>
+
+  <div class="card">
+    <strong>Need help or found a problem?</strong>
+    <p style="margin:6px 0 0">Open an issue on GitHub and say which device you use and what you saw. A GitHub account is free.<br>
+    <a href="https://github.com/lazlaru/lazlaru.github.io/issues/new?title=Downwind%3A%20">Report a problem or ask a question</a></p>
+  </div>
+
+  <h2>Common questions</h2>
+  <dl>
+    <dt>Why don't I see an aircraft I can see out the window?</dt>
+    <dd>Downwind shows aircraft that broadcast ADS-B and that a volunteer receiver near you hears. Aircraft without ADS-B Out, or in an area with no receivers, don't appear.</dd>
+    <dt>The Airport tab says traffic is coming from adsb.fi.</dt>
+    <dd>adsb.lol, the default source, allows 500 requests a day for each internet connection without a key. When those are used up, Downwind switches to adsb.fi until adsb.lol resets at midnight UTC. A free adsb.lol key, added in Settings, raises the allowance.</dd>
+    <dt>How do I record a flight?</dt>
+    <dd>On iPhone, open the Record tab and press Start before taxi. Downwind records GPS in the background, and with a GDL 90 receiver (such as Stratux) on Wi-Fi it records nearby traffic too. You can also import GPX or KML track files in the Flights tab.</dd>
+    <dt>Can I listen to ATC?</dt>
+    <dd>Each airport's frequency list links to LiveATC.net, which opens in your browser.</dd>
+    <dt>How do I add the home screen widget?</dt>
+    <dd>Touch and hold the home screen, tap Edit, then Add Widget, and choose Downwind. Touch and hold the widget to set its airport.</dd>
+    <dt>Is Downwind approved for navigation?</dt>
+    <dd>No. It is for situational awareness and reviewing flights afterwards. It is not certified, and it must not be used for navigation or collision avoidance.</dd>
+  </dl>
+
+  <h2>Privacy</h2>
+  <p>Downwind has no account, advertising, analytics or tracking. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <span>© 2026 LD Clinton</span>
+    <a href="../">More apps by LD Clinton</a>
+  </footer>
+</main>
+</body>
+</html>
